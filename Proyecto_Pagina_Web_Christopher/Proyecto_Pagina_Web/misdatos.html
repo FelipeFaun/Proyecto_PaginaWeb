@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis datos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="menu"></div>
+
+    <div class="flex">
+
+    <h1 class="Titulo">Mis datos</h1>
+
+    <form action="" id="formulario-misdatos">
+      <div class="form-container">
+        
+        <!-- Fila para el formulario -->
+        <div class="row">
+
+          <!-- Columna de Cajas de texto -->
+          <div class="col">
+
+            <div class="mb-3 row">
+              <label for="rut" class="color_text col-sm-3 col-form-label">Rut</label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" id="rut" name="rut" placeholder="Ej: 21.856.231-9" >
+              </div>
+            </div>
+            
+            <div class="mb-3 row">
+              <label for="nombre" class="color_text col-sm-3 col-form-label">Nombres</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Christopher">
+              </div>
+            </div>
+            
+            <div class="mb-3 row">
+              <label for="apellido" class="color_text col-sm-3 col-form-label">Apellidos</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ej: Guerrero">
+              </div>
+            </div>
+            
+            <div class="mb-3 row">
+              <label for="correo" class="color_text col-sm-3 col-form-label">Correo</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="correo" name="correo" placeholder="ejemplo@gmail.com" > 
+              </div>
+            </div>
+            
+            <div class="mb-3 row">
+              <label for="direccion" class="color_text col-sm-3 col-form-label">Dirección</label>
+              <div class="col-sm-6">
+                <textarea style="resize: none;" class="form-control" id="direccion" name="direccion" placeholder="Ej: Santiago #4583" ></textarea> 
+              </div>
+            </div>
+
+            <div class="mb-4 row">
+              <div class="col-sm-3">
+                <label class="color_text form-check-label" for="confirmacion">
+                  Con subscripción
+                </label>
+              </div>
+              <div class="col-sm-8">
+                <input type="checkbox" class="form-check-input" name="confirmacion" >
+                <label class="color_text form-check-label" for="confirmacion" >
+                  Deseo subscribirme con un aporte de $3000 mensuales y <br> obtener un 5% de descuento en mis compras
+                </label>
+              </div>
+            </div>
+
+          <div class="mb-3 row">
+              <label class="color_text col-sm-3 col-form-label" for="contraseña">Contraseña</label>
+              <div class="col-sm-6">
+                  <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña" >
+              </div>
+          </div>
+          
+          <div class="mb-3 row">
+              <label class="color_text col-sm-3 col-form-label" for="repetirContraseña">Repetir contraseña</label>
+              <div class="col-sm-6">
+                  <input type="password" class="form-control" id="repetirContraseña" name="repetirContraseña" placeholder="Repetir contraseña">
+              </div>
+          </div>
+
+          </div>
+
+          <!-- Columna de Foto de perfil -->
+          <div class="col">
+            <div id="contenedor" class="mb-3 row">
+              <div id="contenedor-interno">
+                <img id="imagen" src="img/usuario_sin_foto.jpg" alt="Imagen" class="registro_foto">
+              </div>
+            </div>
+            <input type="file" id="foto" accept="image/*" name="foto">
+            <label for="foto" id="boton-seleccionar" class="mb-3 row">Seleccionar Imagen</label>
+          </div>
+
+        </div>
+
+        <!-- Fila para los Botones -->
+        <div class="row">
+          <div class="col">
+            <button type="submit" class="btn btn-primary registro_botones">Guardar</button>
+            <button type="reset" class="btn btn-primary registro_botones">Limpiar</button>
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
+
+  <footer class="contacto">
+    <span><a href="https://www.whatsapp.com/"><img src="img/whatsapp_icono.png" alt="" class="iconos_contacto"></a></span>
+    <span><a href="https://www.facebook.com/"><img src="img/facebook_icono.png" alt="" class="iconos_contacto"></a></span>
+    <span><a href="https://www.instagram.com/"><img src="img/Instagram_Icono.png" alt="" class="iconos_contacto"></a></span>
+    <span><a href="https://www.google.com/maps/place/Padre+Alonso+de+Ovalle+1586,+Santiago,+Regi%C3%B3n+Metropolitana/@-33.4469693,-70.6580078,17z/data=!3m1!4b1!4m6!3m5!1s0x9662c5a804329319:0xac245b29ee3a83d4!8m2!3d-33.4469693!4d-70.6580078!16s%2Fg%2F11bw448f2w?entry=ttu"><img src="img/googlemaps_icono.png" alt="" class="iconos_contacto"></a>Padre Alonso Ovalle 1586, Santiago</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/validar_formularios.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
