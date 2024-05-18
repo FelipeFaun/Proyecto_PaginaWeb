@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="menu"></div>
+
+    <div class="flex">
+        <h1 class="titulos">Ingresar a la tienda</h1>
+
+        <div class="cuadro_login">
+            <form id="ingresar">
+                <div class="mb-3 row">
+                    <label for="email" class="col-sm-4 col-form-label text-left">Correo Electrónico</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="email" name="email" placeholder="ejemplo@gmail.com" required>
+                        <span class="error" id="emailError"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <label for="password" class="col-sm-4 col-form-label text-left">Contraseña</label>
+                    <div class="col-sm-8">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" minlength="6" maxlength="20" required>
+                        <span class="error" id="passwordError"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="text">
+            <a type="button" class="btn btn-primary btn-block" href="registro.html">Registrarse</a>
+            <a type="button" class="btn btn-primary btn-block" href="#">Olvidé mi contraseña</a>
+        </div>
+    </div>
+
+    <footer class="contacto">
+        <span><a href="https://www.whatsapp.com/"><img src="img/whatsapp_icono.png" alt="" class="iconos_contacto"></a></span>
+        <span><a href="https://www.facebook.com/"><img src="img/facebook_icono.png" alt="" class="iconos_contacto"></a></span>
+        <span><a href="https://www.instagram.com/"><img src="img/Instagram_Icono.png" alt="" class="iconos_contacto"></a></span>
+        <span><a href="https://www.google.com/maps/place/Padre+Alonso+de+Ovalle+1586,+Santiago,+Regi%C3%B3n+Metropolitana/@-33.4469693,-70.6580078,17z/data=!3m1!4b1!4m6!3m5!1s0x9662c5a804329319:0xac245b29ee3a83d4!8m2!3d-33.4469693!4d-70.6580078!16s%2Fg%2F11bw448f2w?entry=ttu"><img src="img/googlemaps_icono.png" alt="" class="iconos_contacto"></a>Padre Alonso Ovalle 1586, Santiago</span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/validar_formularios.js"></script>
+</body>
+</html>
